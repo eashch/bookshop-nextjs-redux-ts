@@ -1,0 +1,85 @@
+@import '../../app/style-global.scss';
+
+.log-in-block {
+    position: relative;
+    width: 241px;
+    height: 312px; 
+    background: #FFF;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    display: flex;
+    flex-direction: column;
+    right: 113px;
+    top: 13px;
+}
+
+.logout-block {
+    height: 100px;
+} 
+
+.log-in-block__title {
+    color: $color-text-black;
+    font-size: 16px;
+    font-weight: 700; 
+    align-self: center;
+}
+
+
+
+.log-in-field {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-top: 15px;
+    margin-left: 26px;
+    align-items: flex-start;
+}
+
+.log-in-field__text-name {
+    color: $color-text-black-solid; 
+    font-size: 12px;
+    font-weight: 700; 
+}
+
+.log-in-field__input {
+    width: 176px;
+    height: 35px; 
+    border: 1px solid $color-button;
+    color: $color-button;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-transform: lowercase; 
+    padding-left: 9px;
+}
+
+.log-in-field__input_error {
+    border-color: $color-text-error;
+    color: $color-text-error;
+}
+
+.log-in-field__text-error {
+    color: $color-text-error; 
+    font-size: 8px;
+    font-style: normal;
+    font-weight: 700; 
+    align-self: center;
+    margin-left: -26px;
+}
+
+.log-in-field__button-submit {
+    width: 176px;
+    height: 32px; 
+    background-color: $color-button-light;
+    color: $color-text-white;
+    margin-top: 42px;
+    margin-left: 26px;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700; 
+    text-transform: uppercase;
+}
+
+.logout-button {
+    margin-top: 10px;
+}

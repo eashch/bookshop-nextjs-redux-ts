@@ -1,0 +1,45 @@
+@import '../../app/style-global.scss';
+
+@mixin sticker($background-color: DarkGray) {
+    position: absolute;
+    text-transform: uppercase;
+    text-align: left;
+    width: 100px;
+    height: 100px;
+    background-color: $background-color;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    z-index: 90;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 22px;
+    letter-spacing: 0em;
+    padding-bottom: 20px;
+    padding-left: 21px;
+    box-shadow: 0px 24px 36px 0px #35315447;
+    float: right;
+}
+
+.sticker__old-book-exchange {
+    @include sticker(#9E98DC);
+    
+    top: 79px;
+    right: -85px;
+    width: 149px;
+    height: 204px;
+}
+
+.sticker__top-books-2022 {
+    @include sticker(#FF8FE6);
+    top: 359px;
+    right: -160px;
+    width: 137px;
+    height: 273px;
+}
+
+.sticker__arrow {
+    width: 55px;
+    height: 12px;
+}

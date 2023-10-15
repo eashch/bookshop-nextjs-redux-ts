@@ -1,0 +1,42 @@
+@import '../../app/style-global.scss';
+@import '../../app/basic-elements.scss';
+
+.content-menu {
+    width: 416px;
+    height: 710px;
+    display: flex;
+    flex-direction: column;
+    background-color: #EFEEF6;
+    margin-left: -$main-margin-sides;
+    padding-left: 158px;
+    padding-top: 45px;
+    gap: 23px;
+    right: unset;
+    bottom: unset;
+    z-index: unset;
+}
+
+.content-menu__option {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-left: -20px;
+    font-size: 12px;
+}
+
+.content-menu__option_selected {
+    color: $color-text-black;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.content-menu__option-indicator {
+    background-color: #756AD3;
+    border-radius: 50%;
+    width: 6px;
+    height: 6px;
+    margin-right: 14px;
+    visibility: hidden;
+}

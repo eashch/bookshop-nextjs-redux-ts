@@ -1,0 +1,129 @@
+@import '../../app/style-global.scss';
+
+.header {
+    position: fixed;
+    height: 116px;
+    width: 100%;
+    background-color: $color-container-white;
+    z-index: 100;
+}
+
+.header-content {
+    height: 100%;
+    width: $page-width;
+    margin: auto;
+    background-color: $color-container-white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.title {
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 29px;
+    letter-spacing: 0em;
+    color: $color-text-black;
+    margin-top: 47px;
+    margin-left: 0px;
+    cursor: pointer;
+}
+
+.navigation {
+    width: 372px;
+    margin-top: 56px;
+    margin-right: 0px;
+    display: block;
+}
+
+.navigation ul {
+    display: flex;
+    justify-content: space-between;
+}
+
+.navigation__li-item {
+    display: block;
+    float: left;
+}
+
+.navigation__link {
+    text-transform: uppercase;
+    color: $color-text-gray;
+    font-size: 10px;
+    font-weight: 700;
+    line-height: 12px;
+    letter-spacing: 0em;
+
+    &:hover {
+        cursor: pointer;
+    }
+}
+
+.navigation__link_active {
+    color: #1C2A39;
+    font-weight: 900;
+    cursor: pointer;
+}
+
+.header-buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 120.84px;
+    height: 17px;
+    margin-top: 53px;
+    margin-right: 0px;
+}
+
+.header-buttons__button {
+    background-color: transparent;
+    background-repeat: no-repeat;
+    border: none;
+    outline: none;
+    appearance: none;
+    position: relative;
+    overflow: visible;
+}
+
+.header-buttons__button_user {
+    width: 12px;
+    height: 15px;
+}
+
+.header-buttons__button_shopping-cart {
+    width: 12px;
+    height: 15px;
+}
+
+.shopping-cart__wrapper {
+    overflow: visible;
+}
+
+.books-counter {
+    position: relative;
+    background: #FF353A;
+    color: white;
+    width: 13px;
+    height: 13px;
+    border-radius: 50%;
+    font-family: Montserrat;
+    font-size: 10px;
+    font-weight: 500;
+    line-height: 12px;
+    letter-spacing: 0em;
+    float: right;
+    right: -3.16px;
+    bottom: -4px;
+    top: -12px;
+}
+
+.header-buttons__button_menu-mobile {
+    display: none;
+}
+
+.header-buttons__button-profile-container {
+    width: 12px;
+    height: 15px;
+    overflow: visible;
+}
+

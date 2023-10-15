@@ -1,0 +1,65 @@
+@import '../../app/style-global.scss';
+@import '../../app/basic-elements.scss';
+
+.book {
+    width: 424px;
+    height: 300px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    gap: 36px;
+    align-self: unset;
+    margin-left: 0;
+}
+
+.book__image {
+    width: 212px;
+    height: 300px;
+    box-shadow: 0px 24px 36px 0px rgba(53, 49, 84, 0.28);
+}
+
+.book-description {
+    display: flex;
+    flex-direction: column;
+    margin-top: 53px;
+}
+
+.book-description__author {
+    white-space: nowrap;
+}
+
+.book-description__title {
+    color: $color-text-black;
+    font-size: 16px;
+    font-weight: 700;
+    margin-top: 4px;
+    width: 176px;
+    max-height: 57px;
+}
+
+.book-description__description {
+    margin-top: 16px;
+    max-height: 40px;
+    width: 176px;
+}
+
+.book-description__price {
+    margin-top: 16px;
+    color: $color-text-black;
+    font-weight: 700;
+}
+
+.book-description__button-buy {
+    margin-top: 16px;
+}
+
+.book-description__button-buy_in-cart {
+    color: $color-text-gray;
+    border: 1px solid #EEEDF5;
+}
+
+.ellipsis {
+    overflow: hidden;
+    word-wrap: break-word;
+    text-overflow: ellipsis;
+}

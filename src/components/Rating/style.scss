@@ -1,0 +1,26 @@
+@import '../../app/style-global.scss';
+@import '../../app/basic-elements.scss';
+
+.rating {
+    display: flex;
+    flex-direction: row;
+    gap: 6px;
+    margin-top: 4px;
+}
+
+.rating__stars {
+    width: 60px;
+    height: 12px;
+    background-color: #EEEDF5;
+    mask-image: url(../../../public/rating__stars.svg);
+    position: relative;
+}
+
+.rating__stars_rating {
+    width: 60px;
+    height: 12px;
+    background-color: #F2C94C;
+    mask-image: url(../../../public/rating__stars.svg);
+    position: absolute;
+    z-index: 10;
+}

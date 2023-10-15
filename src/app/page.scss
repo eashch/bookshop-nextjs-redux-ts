@@ -1,0 +1,57 @@
+@import '../app/style-global.scss';
+
+.main {
+    width: $page-width;
+    margin: auto;
+    padding-top: 119px;
+}
+
+.content {
+    display: flex;
+    flex-direction: row;
+    margin-top: 105px;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.content-menu__button-open-mobile {
+    display: none;
+    z-index: 99;
+    position: fixed;
+    right: 15px;
+    bottom: 15px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: lightblue;
+}
+
+.content-menu__icon_open-book {
+    width: 35px;
+    height: 35px;
+}
+
+.content-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.books-container {
+    width: 924px;
+    background-color: transparent;
+    margin-top: 46px;
+    margin-left: -60px;
+    align-self: stretch;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 75px;
+    row-gap: 90px;
+}
+
+
+.content__button-load-more {
+    margin-left: 325px;
+    margin-bottom: 74px;
+    margin-top: 96px;
+}

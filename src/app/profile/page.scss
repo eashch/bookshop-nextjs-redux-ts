@@ -1,0 +1,87 @@
+@import '../../app/basic-elements.scss';
+
+.main {
+    width: $page-width;
+    margin: auto;
+    padding-top: 203px;
+}
+
+.profile {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.profile-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.profile-container > div {
+    display: flex;
+    flex-direction: row;
+    gap: 17px;
+}
+
+.profile-container__text-title {
+    color: $color-text-black;
+    font-size: 24px;
+    font-weight: 700; 
+    margin-bottom: 12px;
+}
+
+.profile-info {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.profile-info > div {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.profile-info__text_small {
+    color: $color-text-black-solid;
+    font-size: 12px;
+    font-weight: 700; 
+}
+
+.profile-info__text_big {
+    color: $color-text-black-solid;
+    font-size: 24px;
+    font-weight: 700; 
+}
+
+.profile-info__button-edit {
+    margin-top: 16px;
+}
+
+.about-me {
+    width: 353px;
+    height: 345px; 
+    background: #FFE0E2; 
+    box-shadow: 0px 24px 36px 0px rgba(53, 49, 84, 0.28);
+    display: flex;
+    flex-direction: column;
+    padding: 17px 28px 17px 29px;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    gap: 29px;
+}
+
+.about-me__text-title {
+    color: $color-text-black-solid;
+    font-size: 12px;
+    font-weight: 700; 
+}
+
+.about-me__text-description {
+    color: $color-text-gray;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal; 
+}
