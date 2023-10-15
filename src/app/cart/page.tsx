@@ -46,8 +46,8 @@ function Cart() {
             <h3 className='cart__text-total-price'>
                 TOTAL PRICE: {cartSlice.books.length > 0 
                     ? (getCurrencySymbol(cartSlice.books[0].book) 
-                        + (cartSlice.books.reduce((accumulator, cartItem) => accumulator + getPriceNumber(cartItem.book) * cartItem.amount, 0)))
-                    : 0
+                        + (cartSlice.books.reduce((accumulator, cartItem) => accumulator + getPriceNumber(cartItem.book) * cartItem.amount, 0)).toFixed(2))
+                    : "0"
                 }
             </h3>
             {auth.isLoggedIn 

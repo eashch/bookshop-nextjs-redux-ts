@@ -76,7 +76,7 @@ function CartItem(cartItem: ICartItem) {
         </div>
         <span className='cart-item__text-price'>
             {getCurrencySymbol(cartItem.book) 
-                + (getPriceNumber(cartItem.book) * cartItem.amount)}
+                + (getPriceNumber(cartItem.book) * cartItem.amount).toFixed(2)}
         </span>
         <span className='cart-item__text-delivery'>
             Shipping: delivery
